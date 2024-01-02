@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function turnOnLight() {
+            document.getElementById("light").src="../images/yellow_light.png" 
+        }
+
+        function turnOffLight() {
+            document.getElementById("light").src ="../images/gray_light.png";
+        }
+    </script>
+</head>
+<body>
+    <img src="../images/yellow_light.png" id="light" width="100" height="100"><br><br>
+    <input type="button" value="开灯" onclick="turnOnLight()">
+    <input type="button" value="关灯" onclick="turnOffLight()">
+</body>
+</html>
