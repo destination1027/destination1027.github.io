@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>用户注册</title>
+</head>
+<body>
+	<form action=""method="post"name="form1">
+	<h2 align="center">用户注册</h2>
+	<table width="800"border="1"bordercolor="blue"align="center"cellpadding="3"cellspacing="2"
+		   bgcolor="#66ccff">
+		<tr>
+		 <td width="300"height="20"align="right">用户名</td>
+		 <td width="400"height="20"align="left">
+			<input type="text"name="username"id="username"size="12"maxlength="12"/>
+			
+		 </td>
+		</tr>
+		<tr>
+		 <td width="300"height="20"align="right">曾用名（看不到，暗地传输数据）</td>
+		 <td width="400"height="20"align="left">
+			<input type="hidden"id="former-name"name="former-name"value="曾用名"size="12"maxlength="12"/>
+		 </td>
+		</tr>
+		<tr>
+		 <td width="300"height="20"align="right">密码</td>
+		 <td width="400"height="20"align="left">
+		<input type="password"name="pass"id="pass"size="12"maxlength="12"/>*
+			</td>
+		</tr>
+		<tr>
+		 <td width="300"height="20"align="right">确认密码</td>
+		 <td width="400"height="20"align="left">
+		<input type="password"name="pass"id="pass"size="12"maxlength="12"/>*
+			</td>
+		<tr>
+		 <td width="300"height="20"align="right">性别</td>
+		 <td width="400"height="20"align="left">
+			<input type="radio"name="sex"value="男"checked/>男
+			<input type="radio"name="sex"value="女"/>女
+			</td>
+		</tr>
+		<tr>
+		 <td width="300"height="20"align="right">爱好</td>
+		 <td width="400"height="20"align="left">
+			<input type="checkbox"name="like"value="上网"/>上网
+			<input type="checkbox"name="like"value="篮球"checked/>篮球
+			<input type="checkbox"name="like"value="听歌"/>听歌
+			 <input type="checkbox"name="like"value="下棋"/>下棋
+			</td>
+		</tr>
+		<tr>
+			 <td width="300"height="20"align="right">展示文件</td>
+		     <td width="400"height="20"align="left">
+				 <input type="file"name="files"/><br/>
+			</td>
+		</tr>
+		<tr>
+			<td width="300"height="20"align="right" class="mid"><label for="mybutton" id="my_bt">按钮</label></td>
+		     <td width="400"height="20"align="left">
+				 <input class="bt" type="button" onClick="change_Color()" name="mybutton" value="按钮"/><br/>
+				 <script type="text/javascript">  
+                 /*根据id得到元素，然后改变字体额颜色 */  
+                      function change_Color(){  
+               let black_bt = document.getElementById("my_bt");  
+                       black_bt.style.color = "red";  
+                       }  
+                 </script>  
+				<input type="button" onClick="alter('Hello World!')"value="Click Me!">
+			</td>
+		</tr>
+		<tr>
+			 <td width="300"height="20"align="right">图片按钮_按钮</td>
+		     <td width="400"height="20"align="left">
+				<input type="image"width="60"height="30"src="../../Pictures/QQ图片20230618044549.png">
+			</td>
+		</tr>
+		<tr>
+		    <td width="300"height="20"align="right">喜欢的颜色</td>
+		     <td width="400"height="20"align="left"> 
+		     <input type="color">
+			</td>
+		</tr>
+		<tr>
+			<td width="300"height="20"align="right">喜欢的数字(0-9)</td>
+		     <td width="400"height="20"align="left">
+				 <input type="number"id="favorite-number"name="favorite-number"min="0"max="9">
+		</tr>
+		<tr>
+		    <td width="300"height="20"align="right">身高</td>
+		     <td width="400"height="20"align="left">
+				 <input type="range"id="slider"name="slider"min="0"max="200">	 
+		</tr>
+		<tr>
+			<td width="300"height="20"align="right">联系电话(tel)</td>
+		     <td width="400"height="20"align="left">
+				 <input type="tel">
+				  <p>"Safari 8 及更新版本支持type=tel"</p>
+		  </tr>
+		<tr>
+			<td width="300"height="20"align="right">电子邮件(email)</td>
+		     <td width="400"height="20"align="left">
+				 <input type="text"name="email"id="email"size="30"maxlength="30"/>*
+			</td>
+		   </tr>
+		<tr>
+			<td width="300"height="20"align="right">你最喜欢的网站(url)</td>
+		     <td width="400"height="20"align="left">
+				 <input type="text"namme="url"id="url"size="30"maxlength="30"/>
+		 </tr>
+		<tr>
+		 <td width="300"height="20"align="right">你的搜索(search)</td>
+		     <td width="400"height="20"align="left">
+				 <input type="text"name="search"id="search"size="30"maxlength="30"/>
+		</tr>
+		<tr>
+		  <td width="300"height="20"align="right">出生日期</td>
+		     <td width="400"height="20"align="left">
+				 <input type="date">
+		</tr>
+		<tr>
+		<td width="300"height="20"align="right">出生日期_时间</td>
+		     <td width="400"height="20"align="left">
+				 <input type="datetime">
+				 <p>"Chrome、Firefox或Internet Explorer不支持type="datetime"</p>
+		</tr>
+		<tr>
+		<td width="300"height="20"align="right">出生日期_时间(datetime_local)</td>
+		     <td width="400"height="20"align="left">
+				 <input type="datetime-local">
+		</tr>
+		<tr>
+		<td width="300"height="20"align="right">出生年月（month）</td>
+		     <td width="400"height="20"align="left">
+				 <input type="month">
+		</tr>
+		<tr>
+		<td width="300"height="20"align="right">出生周（week）</td>
+		     <td width="400"height="20"align="left">
+				 <input type="week">
+		</tr>
+		<tr>
+		<td width="300"height="20"align="right">出生时刻（time）</td>
+		     <td width="400"height="20"align="left">
+				 <input type="time">
+		</tr>
+		<tr>
+		<td width="300"height="20"align="right">最高学历</td>
+		     <td width="400"height="20"align="left">
+				 <input type="text">
+		</tr>
+		<tr>
+		<td width="300"height="20"align="right">职业（select-option）</td>
+		     <td width="400"height="20"align="left">
+				 <select name="work">
+					 <option value="学生">学生</option>
+					 <option value="教师"selected>教师</option>
+					 <option value="医生">医生</option>
+				</select>
+		<tr>
+		<td width="300"height="20"align="right">职业（select-option）</td>
+		     <td width="400"height="20"align="left">
+				 <textarea name="talk" cols="50"rows="5">请输入您的留言信息...</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td height="20" colspan="2" align="center">
+			  <input type="submit" name="Submit" value="提交"/>
+			   <input type="reset" name="Submit2" value="重写"/>
+			</td>
+		</tr>
+		</table>
+	</form>
+</body>
+</html>
